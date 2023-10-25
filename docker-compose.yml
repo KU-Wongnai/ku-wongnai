@@ -39,7 +39,6 @@ services:
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
-    container_name: phpmyadmin
     restart: always
     environment:
       PMA_HOST: mysql
@@ -52,6 +51,28 @@ services:
     networks:
       - mysql_network
 
+  mailpit:
+    image: "axllent/mailpit:latest"
+    ports:
+      - "${FORWARD_MAILPIT_PORT:-1025}:1025"
+      - "${FORWARD_MAILPIT_DASHBOARD_PORT:-8025}:8025"
+    networks:
+      - ku-wongnai_ku-wongnai
+
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
+    volumes:
+      - "db_redis:/data"
+    healthcheck:
+      test:
+        - CMD
+        - redis-cli
+        - ping
+      retries: 3
+      timeout: 5s
+
 networks:
   mysql_network:
     driver: bridge
@@ -60,3 +81,4 @@ networks:
 
 volumes:
   db_data:
+  db_redis:
