@@ -1,0 +1,36 @@
+[submodule "src/user-service"]
+	path = src/user-service
+	url = https://github.com/KU-Wongnai/user-service.git
+	branch = main
+[submodule "src/notification-service"]
+	path = src/notification-service
+	url = https://github.com/KU-Wongnai/notification-service.git
+	branch = main
+[submodule "src/order-service"]
+	path = src/order-service
+	url = https://github.com/KU-Wongnai/order-service.git
+	branch = main
+[submodule "src/review-service"]
+	path = src/review-service
+	url = https://github.com/KU-Wongnai/review-service.git
+	branch = main
+[submodule "src/restaurant-service"]
+	path = src/restaurant-service
+	url = https://github.com/KU-Wongnai/restaurant-service.git
+	branch = main
+[submodule "src/file-storage"]
+	path = src/file-storage
+	url = https://github.com/KU-Wongnai/file-storage.git
+	branch = main
+[submodule "src/payment-service"]
+	path = src/payment-service
+	url = https://github.com/KU-Wongnai/payment-service.git
+	branch = main
+[submodule "src/gateway"]
+	path = src/gateway
+	url = https://github.com/KU-Wongnai/gateway.git
+	branch = main
+[submodule "src/frontend"]
+	path = src/frontend
+	url = https://github.com/KU-Wongnai/frontend.git
+	branch = main
