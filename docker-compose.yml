@@ -72,6 +72,8 @@ services:
         - ping
       retries: 3
       timeout: 5s
+    networks:
+      - ku-wongnai_ku-wongnai
 
 networks:
   mysql_network:
