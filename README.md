@@ -1,5 +1,7 @@
 # KU Wongnai
 
+[Slide](https://www.canva.com/design/DAFyLdHz5nM/Ybhtk1yH4Sb0wa9ZQnzr1A/view?utm_content=DAFyLdHz5nM&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+
 ## Setup
 
 Clone this project with all other services
